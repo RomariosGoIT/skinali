@@ -141,6 +141,7 @@ body {
 }
 
 .menu-button {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,25 +155,65 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: transparent;
-  border: none;
   border-right: 1px solid rgba(81, 11, 186, 0.1);
   border-left: 1px solid rgba(81, 11, 186, 0.1);
   height: 8rem;
   width: 7rem;
   cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-.menu-button__line {
-  display: block;
-  height: 3px;
+.menu-button span {
+  position: absolute;
   width: 2rem;
-  background-color: #89a9eb;
-  margin: 2px 0;
+  height: 3px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: #89a9eb;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.menu-button:focus, .menu-button:active {
-  outline: none;
+.menu-button span:nth-child(1) {
+  top: 40%;
+  left: 50%;
+}
+
+.menu-button span:nth-child(2) {
+  bottom: 40%;
+  left: 50%;
+}
+
+.menu-button.active span:nth-child(1) {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+          transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.menu-button.active span:nth-child(2) {
+  bottom: 50%;
+  -webkit-transform: translate(-50%, 35%) rotate(225deg);
+          transform: translate(-50%, 35%) rotate(225deg);
+}
+
+.menu-button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 3px;
+  background: #89a9eb;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 1;
+}
+
+.menu-button.active:before {
+  opacity: 0;
 }
 
 .logo__text {
