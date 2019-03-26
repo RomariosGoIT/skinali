@@ -7,15 +7,22 @@
   color: $primary
   cursor: pointer
   +bold
+  transition: all .2s ease
+  &:hover
+    background-color: $primary
+    color: #fff
   &:active, &:focus
     outline: none
 
 .button
   text-transform: uppercase
   padding: 2.5rem 4rem
-  border: none
+  border: 2px solid $primary
   background-color: $primary
   color: #fff
   +bold
+  cursor: pointer
+  transition: all .2s ease
+  
   &:active, &:focus
     outline: none

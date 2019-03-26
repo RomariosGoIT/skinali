@@ -29,6 +29,13 @@ body {
   color: #507fe1;
   cursor: pointer;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.button-o:hover {
+  background-color: #507fe1;
+  color: #fff;
 }
 
 .button-o:active, .button-o:focus {
@@ -38,10 +45,13 @@ body {
 .button {
   text-transform: uppercase;
   padding: 2.5rem 4rem;
-  border: none;
+  border: 2px solid #507fe1;
   background-color: #507fe1;
   color: #fff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .button:active, .button:focus {
