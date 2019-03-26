@@ -258,10 +258,13 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .menu__link {
     font-size: 1.7rem;
-    padding: 1rem 0;
+    margin: 1rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
