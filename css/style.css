@@ -92,6 +92,44 @@ body {
   white-space: nowrap;
 }
 
+.menu {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  top: 8rem;
+  left: 0;
+  padding: 1.6rem 0;
+  background-color: #507fe1;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+}
+
+.menu_active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,6 +150,7 @@ body {
   border-left: 1px solid rgba(81, 11, 186, 0.1);
   height: 8rem;
   width: 7rem;
+  cursor: pointer;
 }
 
 .menu-button__line {
