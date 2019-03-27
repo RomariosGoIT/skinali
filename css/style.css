@@ -263,12 +263,17 @@ body {
 }
 
 .offer-block {
+  background-image: url("../img/offer_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
   background-color: #fff;
   padding: 8rem;
   -webkit-transform: translateY(-10.2rem);
           transform: translateY(-10.2rem);
-  -webkit-box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .offer__title {
@@ -318,16 +323,53 @@ body {
   height: 8rem;
 }
 
+.form__checkbox {
+  margin-right: 3rem;
+}
+
+.form__group:not(:last-child) .form__input {
+  border-right: 0;
+}
+
 .checkbox {
   display: none;
 }
 
-.checkbox__label::before {
-  content: '';
+.checkbox__label {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5rem;
+}
+
+.checkbox__button {
+  position: absolute;
+  top: -0.6rem;
+  left: 0;
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #000;
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid #dddddd;
+}
+
+.checkbox__button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #507fe1;
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.checkbox:checked ~ .checkbox__label .checkbox__button:after {
+  opacity: 1;
 }
 
 * {
@@ -357,6 +399,9 @@ html {
   .container {
     max-width: 960px;
   }
+  .offer-block {
+    background-position: center right -5rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -379,6 +424,10 @@ html {
     max-width: 100%;
     padding: 0 3rem;
   }
+  .offer-block {
+    background-image: none;
+    background-color: #fff;
+  }
 }
 
 @media (max-width: 576px) {
@@ -397,6 +446,26 @@ html {
   .menu__link {
     font-size: 1.7rem;
     margin: 1rem 0;
+  }
+  .offer-block {
+    padding: 8rem 4rem;
+  }
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__row-checkbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .form__group {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
