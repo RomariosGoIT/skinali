@@ -27,6 +27,23 @@
 			background-image: none
 			background-color: #fff
 
+	.form
+		&__row
+			flex-direction: column
+			&-checkbox
+				flex-direction: row
+		&__row:nth-child(3) &__group
+			margin-bottom: 1rem
+
+		&__group
+			width: 100%
+			flex-basis: 100%
+		&__label
+			margin-top: 2rem
+			margin-bottom: 0.5rem
+		&__input
+			border: 1px solid #dddddd !important
+
 @media (max-width: 576px)
 	.navbar
 		&__logo
@@ -41,11 +58,3 @@
 	.offer
 		&-block
 			padding: 8rem 4rem
-	.form
-		&__row
-			flex-direction: column
-			&-checkbox
-				flex-direction: row
-		&__group
-			width: 100%
-			flex-basis: 100%
