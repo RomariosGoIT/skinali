@@ -476,7 +476,13 @@ html {
     margin: 1rem 0;
   }
   .offer-block {
-    padding: 8rem 4rem;
+    padding: 5rem 3rem;
+  }
+  .offer__title {
+    font-size: 1.9rem;
+  }
+  .offer__subtitle {
+    font-size: 1.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
