@@ -441,14 +441,20 @@ body {
   overflow: hidden;
 }
 
-.catalog-card__image {
-  display: block;
+.catalog-card__tag {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: rgba(80, 127, 225, 0.5);
+  color: #fff;
+  padding: 10px;
 }
 
-.catalog-card .tag {
-  position: absolute;
-  top: 0;
-  left: 0;
+.catalog-card__image {
+  display: block;
 }
 
 .catalog-card__buttons {

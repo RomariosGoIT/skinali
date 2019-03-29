@@ -11,12 +11,18 @@
 		max-width: 57rem
 		box-shadow: 7px 5px 21px rgba(0,0,0,.1)
 		overflow: hidden	
-		&__image
-			display: block
-		.tag
+		&__tag
+			+bold
 			position: absolute
-			top: 0
-			left: 0	
+			top: 1rem
+			left: 1rem
+			font-size: 11px
+			text-transform: uppercase
+			background-color: rgba($primary, 0.5)
+			color: #fff
+			padding: 10px	
+		&__image
+			display: block		
 		&__buttons
 			position: absolute
 			bottom: 0
