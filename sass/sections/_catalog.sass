@@ -1,16 +1,33 @@
 .catalog
-	background-color: rgba(#507fe1, .1)
 	&-block		
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
+	&__card		
+		margin-bottom: 3rem
+		
 	&-card
 		position: relative
-		width: 49%
-		margin-bottom: 2rem 
-		img
-			width: 100%
+		max-width: 57rem
+		box-shadow: 7px 5px 21px rgba(0,0,0,.1)
+		overflow: hidden	
+		&__image
+			display: block
+		.tag
+			position: absolute
+			top: 0
+			left: 0	
 		&__buttons
 			position: absolute
 			bottom: 0
 			right: 0
+		&__button
+			text-transform: uppercase
+			font-size: 11px
+			border: none
+			padding: 10px
+			height: 30px
+			margin-right: -4px
+			cursor: pointer
+
+			

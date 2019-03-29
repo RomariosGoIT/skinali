@@ -58,6 +58,35 @@ body {
   outline: none;
 }
 
+.button-fitting {
+  background-color: #fff;
+  color: #507fe1;
+}
+
+.button-add {
+  background-color: #7c9fe8;
+  color: #fff;
+}
+
+.button-like {
+  background-color: #507fe1;
+  height: 30px;
+  width: 30px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-right: -1px;
+}
+
+.button-like__img {
+  position: relative;
+  bottom: -2px;
+  width: 12px;
+  fill: #507fe1;
+  stroke-width: 3;
+  stroke: #fff;
+}
+
 .navbar {
   position: fixed;
   left: 0;
@@ -389,10 +418,6 @@ body {
   margin-bottom: 10rem;
 }
 
-.catalog {
-  background-color: rgba(80, 127, 225, 0.1);
-}
-
 .catalog-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,20 +429,42 @@ body {
           justify-content: space-between;
 }
 
-.catalog-card {
-  position: relative;
-  width: 49%;
-  margin-bottom: 2rem;
+.catalog__card {
+  margin-bottom: 3rem;
 }
 
-.catalog-card img {
-  width: 100%;
+.catalog-card {
+  position: relative;
+  max-width: 57rem;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.catalog-card__image {
+  display: block;
+}
+
+.catalog-card .tag {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .catalog-card__buttons {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.catalog-card__button {
+  text-transform: uppercase;
+  font-size: 11px;
+  border: none;
+  padding: 10px;
+  height: 30px;
+  margin-right: -4px;
+  cursor: pointer;
 }
 
 * {
