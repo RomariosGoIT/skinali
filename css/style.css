@@ -630,5 +630,10 @@ img {
         flex-basis: 100%;
     margin-bottom: 5rem;
   }
+  .catalog-block img {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
 }
 /*# sourceMappingURL=style.css.map */
