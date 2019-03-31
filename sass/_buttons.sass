@@ -48,3 +48,20 @@
       fill: $primary
       stroke-width: 3
       stroke: #fff
+
+.top 
+    position: fixed
+    width: 40px
+    height: 40px
+    bottom: 130px
+    right: 15px
+    padding: 5px
+    border-radius: 50%
+    background-color: $primary
+    cursor: pointer
+    transition: 0.2s ease
+    transform: translateX(200%)
+    &.active
+      transform: translateX(0)
+    svg
+      fill: #fff

@@ -10,5 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       document.querySelector('.navbar').classList.remove('navbar__scroll');
     }
+
+    if (pageYOffset > 600) {
+      document.querySelector('.top').classList.add('active');
+    } else {
+      document.querySelector('.top').classList.remove('active');
+    }
   });
 });

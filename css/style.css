@@ -87,6 +87,31 @@ body {
   stroke: #fff;
 }
 
+.top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 130px;
+  right: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #507fe1;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+.top.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.top svg {
+  fill: #fff;
+}
+
 .navbar {
   position: fixed;
   left: 0;
