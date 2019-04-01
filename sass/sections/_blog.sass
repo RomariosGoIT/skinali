@@ -1,2 +1,42 @@
 .blog
-	
+  &__heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 7rem
+  &__title
+    font-size: 2.4rem
+    +bold
+  &-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    
+  &__link-more
+    font-size: 1.6rem
+    text-decoration: none
+    color: $primary
+    display: inline-block
+    border-bottom: 1px solid $primary
+    padding: 5px
+    transition: .2s ease    
+    white-space: nowrap
+    &:hover
+      background-color: $primary
+      color: #fff
+      box-shadow: 0 1rem 2rem rgba(0,0,0,0.15)
+      transform: translateY(-1px)
+
+.blog-list
+  &__card
+    text-align: center
+    box-shadow: 0 5px 10px rgba(0,0,0,.08)
+    transition: .2s ease
+    &:hover
+      transform: translateY(-2px)
+      box-shadow: 0 5px 20px rgba(0,0,0,.08)
+  &__text
+    padding: 1rem
+    font-size: 16px
+  &__img
+    overflow: hidden
