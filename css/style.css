@@ -43,6 +43,7 @@ body {
 }
 
 .button {
+  text-decoration: none;
   text-transform: uppercase;
   padding: 2.5rem 4rem;
   border: 2px solid #507fe1;
@@ -450,6 +451,10 @@ body {
   margin-bottom: 10rem;
 }
 
+.catalog {
+  background-color: #f5f6f8;
+}
+
 .catalog-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,6 +468,20 @@ body {
 
 .catalog__card {
   margin-bottom: 3rem;
+}
+
+.catalog__link {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+
+.catalog__descr {
+  display: block;
 }
 
 .catalog-card {
