@@ -12,19 +12,21 @@
     max-width: 285px
     text-align: center
     background-color: #fff
-    box-shadow: 0 5px 5px rgba(0,0,0,.05) 
+    box-shadow: 0 5px 5px rgba(0,0,0,.1)
     &__text
       transition: .2s ease
+    &__cost
+      +bold
+      font-size: 1.6rem
     &__img
-      width: 285px
-      height: 190px
-      background-color: #f6f7f8
+      overflow: hidden
+      img
+        height: 100%
+        transition: .5s ease
     &__pricetag
       display: flex
       justify-content: space-around
       align-items: center
-      span
-        +bold
     &__button
       position: absolute
       width: 100%
@@ -38,7 +40,9 @@
       z-index: -1
       .button
         padding: 1.7rem 4rem
-    &:hover &__button
-      bottom: -80px
-      opacity: 1
-      z-index: 99
+    &:hover &__button      
+        bottom: -80px
+        opacity: 1
+        z-index: 99
+    &:hover &__img img
+        transform: scale(1.2)
