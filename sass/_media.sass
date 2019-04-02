@@ -20,6 +20,9 @@
 	.price
 		&-block
 			justify-content: space-evenly
+	.steps 
+		.step:not(:last-child):before
+			right: -9.8rem 
 
 @media (max-width: 992px)
 	html
@@ -46,6 +49,20 @@
 			justify-content: space-around
 			&__card
 				margin-bottom: 7rem
+	.steps
+		.step
+			flex-basis: 27%
+			margin-bottom: 30px
+			&__number
+				top: 8.5rem
+				right: 10rem
+			&:nth-child(3):before
+				display: none
+			&:not(:last-child):before
+				right: -18.8rem
+				width: 30rem
+				top: 10rem
+
 
 @media (max-width: 768px)
 	
@@ -79,7 +96,24 @@
 	.blog
 		&__heading
 			flex-direction: column
-			
+
+	.steps
+		.step
+			flex-basis: 50%
+			margin-bottom: 30px
+			&__number
+				top: 8.5rem
+				right: 14rem
+			&:nth-child(2):before
+				display: none
+			&:nth-child(3):before
+				display: block
+			&:nth-child(4):before
+				display: none	
+			&:not(:last-child):before
+				right: -15.8rem
+				width: 30rem
+				top: 10rem	
 
 @media (max-width: 576px)
 	.navbar
@@ -115,3 +149,15 @@
 		&__heading
 			flex-wrap: wrap
 			justify-content: center
+
+	.steps
+		.step
+			flex-basis: 100%
+			margin-bottom: 30px
+			&__number
+				top: 8.5rem
+				right: calc(50% - 14.8px)
+			&:before
+				display: none
+			&:not(:last-child):before
+				display: none

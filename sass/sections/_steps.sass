@@ -1,0 +1,38 @@
+.steps
+  background-color: #f5f6f8
+  &-block
+    display: flex
+    justify-content: space-between
+    text-align: center
+    flex-wrap: wrap
+  .step
+    position: relative
+    &__title
+      margin-top: 55px
+      font-size: 18px    
+    &__number
+      display: flex
+      align-items: center
+      justify-content: center      
+      position: absolute
+      top: 7.5rem
+      right: 6rem
+      +bold
+      font-size: 16px
+      width: 30px
+      height: 30px
+      color: $primary
+      background-color: #f5f6f8
+      border: 2px solid #000
+      border-radius: 50em
+      z-index: 20
+
+    &:not(:last-child):before
+      content: ""
+      position: absolute
+      top: 9rem
+      right: -11.8rem
+      width: 18rem
+      height: 2px
+      background-color: #000
+      z-index: 10
