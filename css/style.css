@@ -600,6 +600,21 @@ body {
   overflow: hidden;
 }
 
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-block__card {
+  margin-bottom: 30px;
+}
+
 .price-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,8 +627,8 @@ body {
   max-width: 285px;
   text-align: center;
   background-color: #fff;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
 }
 
 .price-card__text {
@@ -636,7 +651,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 0;
 }
 
 .price-card__pricetag span {
@@ -646,21 +660,26 @@ body {
 .price-card__button {
   position: absolute;
   width: 100%;
-  bottom: -92px;
+  height: 80px;
+  bottom: 0;
   padding-bottom: 30px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08);
   background-color: #fff;
   opacity: 0;
-  visibility: hidden;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  z-index: -1;
+}
+
+.price-card__button .button {
+  padding: 1.7rem 4rem;
 }
 
 .price-card:hover .price-card__button {
-  bottom: -92px;
+  bottom: -80px;
   opacity: 1;
-  visibility: visible;
+  z-index: 99;
 }
 
 * {

@@ -1,4 +1,10 @@
 .price
+  &-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__card
+      margin-bottom: 30px
   &-card
     display: flex
     flex-direction: column
@@ -6,7 +12,7 @@
     max-width: 285px
     text-align: center
     background-color: #fff
-    box-shadow: 0 5px 10px rgba(0,0,0,.08)
+    box-shadow: 0 5px 5px rgba(0,0,0,.05) 
     &__text
       transition: .2s ease
     &__img
@@ -17,20 +23,22 @@
       display: flex
       justify-content: space-around
       align-items: center
-      margin: 10px 0
       span
         +bold
     &__button
       position: absolute
       width: 100%
-      bottom: -92px
+      height: 80px
+      bottom: 0
       padding-bottom: 30px
-      box-shadow: 0 5px 10px rgba(0,0,0,.08)
+      box-shadow: 0 5px 5px rgba(0,0,0,.08)
       background-color: #fff
       opacity: 0
-      visibility: hidden
-      transition: .5s ease
+      transition: opacity .2s ease
+      z-index: -1
+      .button
+        padding: 1.7rem 4rem
     &:hover &__button
-      bottom: -92px
+      bottom: -80px
       opacity: 1
-      visibility: visible
+      z-index: 99
