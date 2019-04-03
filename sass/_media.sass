@@ -62,6 +62,9 @@
 				right: -18.8rem
 				width: 30rem
 				top: 10rem
+			&:nth-child(4) 
+				.step__number:before
+					display: none
 
 
 @media (max-width: 768px)
@@ -103,7 +106,7 @@
 			margin-bottom: 30px
 			&__number
 				top: 8.5rem
-				right: 14rem
+				right: calc(45% - 1px)
 			&:nth-child(2):before
 				display: none
 			&:nth-child(3):before
@@ -111,9 +114,12 @@
 			&:nth-child(4):before
 				display: none	
 			&:not(:last-child):before
-				right: -15.8rem
-				width: 30rem
-				top: 10rem	
+				right: calc(-45% - 1px)
+				width: calc(92% - 1px)
+				top: 10rem
+			&:not(:nth-child(even)) 
+				.step__number:before
+					display: none
 
 @media (max-width: 576px)
 	.navbar
@@ -157,7 +163,10 @@
 			&__number
 				top: 8.5rem
 				right: calc(50% - 14.8px)
+				&:before
+					display: none
 			&:before
 				display: none
 			&:not(:last-child):before
 				display: none
+				

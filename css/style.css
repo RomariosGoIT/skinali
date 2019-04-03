@@ -119,7 +119,7 @@ body {
   top: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 2;
+  z-index: 100;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -642,11 +642,13 @@ body {
 }
 
 .price-card__img {
+  width: 100%;
   overflow: hidden;
 }
 
 .price-card__img img {
   height: 100%;
+  width: 100%;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
@@ -739,6 +741,26 @@ body {
   border: 2px solid #000;
   border-radius: 50em;
   z-index: 20;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.steps .step__number:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.steps .step:not(:first-child) .step__number:before {
+  content: '';
+  position: absolute;
+  left: -11px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #000;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 
 .steps .step:not(:last-child):before {
@@ -889,6 +911,9 @@ img {
     width: 30rem;
     top: 10rem;
   }
+  .steps .step:nth-child(4) .step__number:before {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -941,7 +966,7 @@ img {
   }
   .steps .step__number {
     top: 8.5rem;
-    right: 14rem;
+    right: calc(45% - 1px);
   }
   .steps .step:nth-child(2):before {
     display: none;
@@ -953,9 +978,12 @@ img {
     display: none;
   }
   .steps .step:not(:last-child):before {
-    right: -15.8rem;
-    width: 30rem;
+    right: calc(-45% - 1px);
+    width: calc(92% - 1px);
     top: 10rem;
+  }
+  .steps .step:not(:nth-child(even)) .step__number:before {
+    display: none;
   }
 }
 
@@ -1018,6 +1046,9 @@ img {
   .steps .step__number {
     top: 8.5rem;
     right: calc(50% - 14.8px);
+  }
+  .steps .step__number:before {
+    display: none;
   }
   .steps .step:before {
     display: none;
