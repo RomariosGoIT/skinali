@@ -738,7 +738,7 @@ body {
   height: 30px;
   color: #507fe1;
   background-color: #f5f6f8;
-  border: 2px solid #000;
+  border: 2px solid #262626;
   border-radius: 50em;
   z-index: 20;
   -webkit-transition: .5s ease;
@@ -746,7 +746,7 @@ body {
 }
 
 .steps .step__number:hover {
-  background-color: #000;
+  background-color: #262626;
   color: #fff;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -758,7 +758,7 @@ body {
   left: -11px;
   width: 0;
   height: 0;
-  border-left: 10px solid #000;
+  border-left: 10px solid #262626;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
@@ -770,7 +770,7 @@ body {
   right: -11.8rem;
   width: 18rem;
   height: 2px;
-  background-color: #000;
+  background-color: #262626;
   z-index: 10;
 }
 
@@ -984,6 +984,9 @@ img {
   }
   .steps .step:not(:nth-child(even)) .step__number:before {
     display: none;
+  }
+  .steps .step:nth-child(4) .step__number:before {
+    display: block;
   }
 }
 

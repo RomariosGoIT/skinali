@@ -23,12 +23,12 @@
       height: 30px
       color: $primary
       background-color: #f5f6f8
-      border: 2px solid #000
+      border: 2px solid $text-color
       border-radius: 50em
       z-index: 20
       transition: .5s ease
       &:hover
-        background-color: #000
+        background-color: $text-color
         color: #fff
         transform: scale(1.2)
     &:not(:first-child) 
@@ -38,7 +38,7 @@
         left: -11px
         width: 0
         height: 0
-        border-left: 10px solid #000        
+        border-left: 10px solid $text-color        
         border-top: 10px solid transparent
         border-bottom: 10px solid transparent
 
@@ -49,5 +49,5 @@
       right: -11.8rem
       width: 18rem
       height: 2px
-      background-color: #000
+      background-color: $text-color
       z-index: 10
