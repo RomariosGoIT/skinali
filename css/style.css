@@ -785,6 +785,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .reviews-slider__item {
@@ -1103,7 +1105,7 @@ img {
     right: calc(50% - 14.8px);
   }
   .steps .step__number:before {
-    display: none;
+    display: none !important;
   }
   .steps .step:before {
     display: none;
