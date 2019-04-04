@@ -787,10 +787,12 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 
 .reviews-slider__item {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .reviews-slider__img {
@@ -817,7 +819,7 @@ body {
 .reviews-slider__text:after {
   content: '';
   position: absolute;
-  bottom: -15px;
+  bottom: -10px;
   left: calc(50% - 20px);
   border-left: 20px solid transparent;
   border-top: 20px solid #fff;
@@ -826,6 +828,25 @@ body {
 
 .reviews-slider__name {
   font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 15px;
+}
+
+.offer-discount {
+  background-color: #fff;
+}
+
+.offer-discount .form__group-text {
+  margin: auto 0;
+  margin-left: 40px;
+}
+
+.offer-discount .offer-block {
+  background-image: url("../img/discount_bg.png");
+}
+
+.offer-discount .offer__subtitle {
+  font-size: 20px;
+  width: 79%;
 }
 
 * {
