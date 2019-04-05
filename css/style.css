@@ -833,6 +833,7 @@ body {
 
 .offer-discount {
   background-color: #fff;
+  padding-bottom: 0;
 }
 
 .offer-discount .form__group-text {
@@ -845,7 +846,7 @@ body {
 }
 
 .offer-discount .offer__subtitle {
-  font-size: 20px;
+  font-size: 2rem;
   width: 79%;
 }
 
@@ -999,6 +1000,15 @@ img {
   .offer-block {
     background-image: none;
     background-color: #fff;
+  }
+  .offer-discount .offer-block {
+    background-image: none;
+    background-color: #fff;
+  }
+  .offer-discount .form__group-text {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 20px;
   }
   .form__row {
     -webkit-box-orient: vertical;

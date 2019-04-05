@@ -72,10 +72,21 @@
 	.container
 		max-width: 100%
 		padding: 0 3rem
-	.offer
+	.offer, 
 		&-block
 			background-image: none
-			background-color: #fff
+			background-color: #fff	
+
+	.offer-discount
+		.offer, 
+			&-block
+				background-image: none
+				background-color: #fff
+		.form
+			&__group-text
+				text-align: center
+				margin-left: 0
+				margin-top: 20px
 
 	.form
 		&__row
