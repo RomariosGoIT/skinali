@@ -435,6 +435,7 @@ body {
 .form__button {
   width: 100%;
   padding: 3rem 4rem;
+  white-space: nowrap;
 }
 
 .form__checkbox {
@@ -1101,6 +1102,7 @@ img {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
     margin-left: 0;
+    margin-top: 2rem;
   }
 }
 
@@ -1217,6 +1219,14 @@ img {
   }
   .offer__subtitle {
     font-size: 1.7rem;
+  }
+  .form__group {
+    padding: 0;
+  }
+  .form__button {
+    white-space: normal;
+    line-height: 1.4;
+    padding: 2rem 4rem;
   }
   .section {
     padding: 6rem 0;
