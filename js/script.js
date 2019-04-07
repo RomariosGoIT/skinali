@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const preloader = document.querySelector('.preloader');
+
   document.querySelector('.menu-button').addEventListener('click', el => {
     document.querySelector('.menu').classList.toggle('menu_active');
     document.querySelector('.menu-button').classList.toggle('active');
@@ -16,5 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       document.querySelector('.top').classList.remove('active');
     }
+  });
+
+  // +++++  PRELOADER  ++++++
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      if (!preloader.classList.contains('done')) {
+        preloader.classList.add('done');
+      }
+    }, 1000);
   });
 });
