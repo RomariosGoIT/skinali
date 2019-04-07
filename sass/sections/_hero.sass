@@ -1,19 +1,49 @@
 .hero
   position: relative
+  display: flex
+  justify-content: center
+  align-items: center
   background-image: linear-gradient(to right bottom, rgba(#f1f1f1,.8), rgba(#f1f1f1,.3)), url('../img/hero/hero-bg.jpg')
+  background-attachment: fixed
   background-size: cover
   background-position: center
   margin-top: 8rem
   padding-top: 12rem
   padding-bottom: 27rem
-  
+  &__content
+    position: relative
+    max-width: 60rem
+    box-shadow: 0 5px 15px rgba(0,0,0,.5)
+    overflow: hidden
+    padding: 5rem
+    text-align: center
+    &:before
+      content: ''
+      position: absolute
+      top: -20px
+      right: -20px
+      left: -20px
+      bottom: -20px
+      background: linear-gradient(to right bottom, rgba(#f1f1f1,.9), rgba(#f1f1f1,.4)), url('../img/hero/hero-bg.jpg')
+      background-attachment: fixed
+      background-size: cover
+      background-position: center
+      filter: blur(2px)
+
   &__title
-    width: 26.2rem
+    position: relative
     font-size: 3rem
     margin-bottom: 4rem
     font-weight: 300
+    line-height: 1.4
+    text-transform: uppercase
+    z-index: 10    
   &__subtitle
+    position: relative
     display: block
     +bold
     font-size: 3rem
     margin-bottom: 6.7rem
+    z-index: 10
+  &__button
+    position: relative

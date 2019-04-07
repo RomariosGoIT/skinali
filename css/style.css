@@ -49,10 +49,16 @@ body {
   border: 2px solid #507fe1;
   background-color: #507fe1;
   color: #fff;
+  letter-spacing: 1px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   cursor: pointer;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #507fe1;
 }
 
 .button:active, .button:focus {
@@ -119,7 +125,7 @@ body {
   top: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 100;
+  z-index: 999;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
@@ -177,6 +183,7 @@ body {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   opacity: 0;
+  z-index: 999;
 }
 
 .menu_active {
@@ -297,8 +304,18 @@ body {
 
 .hero {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(241, 241, 241, 0.8)), to(rgba(241, 241, 241, 0.3))), url("../img/hero/hero-bg.jpg");
   background-image: linear-gradient(to right bottom, rgba(241, 241, 241, 0.8), rgba(241, 241, 241, 0.3)), url("../img/hero/hero-bg.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   margin-top: 8rem;
@@ -306,18 +323,53 @@ body {
   padding-bottom: 27rem;
 }
 
+.hero__content {
+  position: relative;
+  max-width: 60rem;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  padding: 5rem;
+  text-align: center;
+}
+
+.hero__content:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  left: -20px;
+  bottom: -20px;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(241, 241, 241, 0.9)), to(rgba(241, 241, 241, 0.4))), url("../img/hero/hero-bg.jpg");
+  background: linear-gradient(to right bottom, rgba(241, 241, 241, 0.9), rgba(241, 241, 241, 0.4)), url("../img/hero/hero-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
 .hero__title {
-  width: 26.2rem;
+  position: relative;
   font-size: 3rem;
   margin-bottom: 4rem;
   font-weight: 300;
+  line-height: 1.4;
+  text-transform: uppercase;
+  z-index: 10;
 }
 
 .hero__subtitle {
+  position: relative;
   display: block;
   font-family: 'Proxima Nova Semibold', sans-serif;
   font-size: 3rem;
   margin-bottom: 6.7rem;
+  z-index: 10;
+}
+
+.hero__button {
+  position: relative;
 }
 
 .offer {
@@ -449,6 +501,10 @@ body {
   width: 33.33%;
   text-align: center;
   margin-bottom: 10rem;
+}
+
+.features-block__text {
+  font-size: 1.8rem;
 }
 
 .catalog {
