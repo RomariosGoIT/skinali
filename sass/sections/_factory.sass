@@ -1,4 +1,5 @@
 .factory
+	background-color: #f5f6f8
 	&-block
 		display: flex
 		justify-content: center
@@ -12,3 +13,15 @@
 				margin-bottom: 0
 		&__img
 			margin-top: 2rem
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08)
+			overflow: hidden
+			outline-offset: 1rem
+			border-radius: 2px
+			transition: .5s
+			&:hover
+				outline: 1rem solid $primary
+				transform: scale(1.05) translateY(-0.6rem)
+				box-shadow: 0 2.5rem 4rem rgba(0,0,0,0.4)
+			img
+				width: 100%
+				height: 100%
