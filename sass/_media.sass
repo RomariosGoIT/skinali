@@ -66,6 +66,12 @@
 				.step__number:before
 					display: none
 
+	.factory
+
+		&-block
+			&__text
+				flex-basis: 55%
+				margin-left: 0
 
 @media (max-width: 768px)
 	
@@ -134,6 +140,11 @@
 			&:nth-child(4) 
 				.step__number:before
 					display: block
+	.factory
+		&-block
+			&__text
+				flex-basis: 70%
+				margin-left: 0
 
 @media (max-width: 576px)
 	.navbar
@@ -183,4 +194,9 @@
 				display: none 
 			&:not(:last-child):before
 				display: none 
-				
+	.factory
+		.section__title
+			margin-bottom: 8rem
+		&-block
+			&__text
+				flex-basis: 100%
