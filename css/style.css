@@ -531,6 +531,11 @@ body {
   margin-bottom: 3rem;
 }
 
+.catalog__card:hover .catalog-card__buttons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .catalog__link {
   text-align: center;
   margin-top: 6rem;
@@ -576,6 +581,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .catalog-card__button {

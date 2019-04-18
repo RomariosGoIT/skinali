@@ -6,6 +6,8 @@
 		justify-content: space-between
 	&__card		
 		margin-bottom: 3rem
+		&:hover .catalog-card__buttons
+			transform: translateY(0)
 	&__link		
 		text-align: center
 		margin-top: 6rem
@@ -37,6 +39,8 @@
 			bottom: 0
 			right: 0			
 			display: flex
+			transform: translateY(100%)
+			transition: 0.2s
 		&__button
 			text-transform: uppercase
 			font-size: 11px
