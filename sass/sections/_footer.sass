@@ -1,0 +1,61 @@
+.footer
+	padding: 4rem 0
+	background-color: #262626
+	color: #fff
+	&-block
+		display: flex
+		justify-content: space-between
+	a
+		color: #fff
+		text-decoration: none
+	&__title
+		+bold
+		margin-bottom: 8px
+		margin-top: 0
+		font-size: 1.8rem
+		text-transform: uppercase
+	&__subtitle
+		display: block
+		margin-bottom: 4.8rem
+	&__copy
+		color: #767676
+	&__pay
+		&-info
+		&-logo
+			margin: 1.5rem
+			width: 8rem
+	&__contacts
+		text-align: right
+	&__phone
+		display: block
+		margin-bottom: 2rem
+		font-size: 2rem
+		+bold
+	&__mail
+		display: block
+		margin-bottom: 2rem
+	&-social
+		&__link
+			margin-left: 1.5rem
+			display: inline-block
+			width: 24px
+			height: 24px
+			background-repeat: no-repeat
+			background-size: cover
+			transition: 0.25s
+		&__link:nth-child(1)
+			background-image: url('../img/footer/social/vk-white.png')
+			&:hover
+				background-image: url('../img/footer/social/vk-black.png')
+				transform: scale(1.2)
+		&__link:nth-child(2)
+			background-image: url('../img/footer/social/fs-white.png')
+			&:hover
+				background-image: url('../img/footer/social/fs-blue.png')
+				transform: scale(1.2)
+		&__link:nth-child(3)
+			background-image: url('../img/footer/social/tw-white.png')
+			&:hover
+				background-image: url('../img/footer/social/tw-blue.png')
+				transform: scale(1.2)
+
