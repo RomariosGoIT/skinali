@@ -1,0 +1,32 @@
+.before
+	&-slider
+		position: relative
+		max-width: 630px
+		margin: 0 auto
+		.fa-angle-left
+			position: absolute
+			top: 50%
+			left: -30px
+			font-size: 35px
+			color: $primary
+			cursor: pointer			
+			transition: 0.25s
+			&:hover, &:focus
+				transform: translateY(-2px)
+			&:active
+				transform: translateY(0)
+		.fa-angle-right
+			position: absolute
+			top: 50%
+			right: -30px
+			font-size: 35px
+			color: $primary
+			cursor: pointer
+			transition: 0.25s
+			&:hover, &:focus
+				transform: translateY(-2px)
+			&:active
+				transform: translateY(0)
+		.slick-dots li button:before
+			font-size: 4rem
+			color: $primary

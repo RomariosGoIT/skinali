@@ -29,3 +29,16 @@ window.addEventListener('load', () => {
     }
   }, 1000);
 });
+
+$(document).ready(function() {
+  $('.before-after').twentytwenty({
+    before_label: 'Cо скинали',
+    after_label: 'Без скинали',
+  });
+  $('.before-slider').slick({
+    draggable: false,
+    nextArrow: '<i class="fas fa-angle-right"></i>',
+    prevArrow: '<i class="fas fa-angle-left"></i>',
+    dots: true,
+  });
+});
