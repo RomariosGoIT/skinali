@@ -37,6 +37,7 @@ $(document).ready(function() {
   });
   $('.before-slider').slick({
     draggable: false,
+    touchMove: false,
     nextArrow: '<i class="fas fa-angle-right"></i>',
     prevArrow: '<i class="fas fa-angle-left"></i>',
     dots: true,

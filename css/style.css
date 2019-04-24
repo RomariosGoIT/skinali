@@ -1751,5 +1751,14 @@ body {
     margin-right: 0;
     margin-bottom: 2rem;
   }
+  .before-slider i.fas.fa-angle-right {
+    visibility: hidden;
+  }
+  .before-slider i.fas.fa-angle-left {
+    visibility: hidden;
+  }
+  .before-slider .slick-dots li button:before {
+    font-size: 6rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
