@@ -1178,8 +1178,9 @@ body {
           transform: translateY(0);
 }
 
-.before-slider .slick-dots li button:before {
-  font-size: 4rem;
+.before-slider .slick-dots li button:before,
+.before-slider .slick-dots li.slick-active button:before {
+  font-size: 1.2rem;
   color: #507fe1;
 }
 
